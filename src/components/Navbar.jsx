@@ -14,7 +14,6 @@ import { PiHeartThin, PiPlusThin } from 'react-icons/pi';
 import { CiLogin, CiUser } from 'react-icons/ci';
 import { IoCloseOutline } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { AudioPlayer } from './AudioPlayer';
 
 export function Navbar() {
   const router = useRouter();
@@ -166,8 +165,6 @@ export function Navbar() {
           ))}
 
         </div>
-
-        <AudioPlayer url="/audio/FFVII_REMAKE_ RUN RUN RUN_inst..mp3" />
 
         <div className={`hidden md:flex items-center gap-4`}>
           {token ? (
