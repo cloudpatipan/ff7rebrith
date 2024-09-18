@@ -8,13 +8,7 @@ export const UserProvider = ({ children }) => {
 
   const [user, setUser] = useState(null);
 
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setToken(sessionStorage.getItem('token') || '');
-    }
-  }, []);
+  const [token, setToken] = useState(sessionStorage.getItem('token') || '');
 
   useEffect(() => {
     if (token) {
